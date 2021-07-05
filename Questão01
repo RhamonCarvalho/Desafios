@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+
+public class questao1 {
+
+	static int indice;
+	static int somaMatriz;
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a quantidade de numero");
+		indice = sc.nextInt();
+
+		int matriz[] = new int[indice];
+
+		somaMatriz = 0;
+		for (int i = 0; i < indice; i++) {
+			System.out.println("digite um numero");
+			matriz[i] = sc.nextInt();
+			somaMatriz = somaMatriz + matriz[i];
+
+		}
+
+		System.out.println("Os numero sao:");
+		for (int i = 0; i < indice; i++) {
+			System.out.println(matriz[i]);
+		}
+		System.out.println(somaMatriz);
+		sc.close();
+
+	}
+}
