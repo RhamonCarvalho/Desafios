@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class questao2 {
+
+	static int indice, indice2;
+	static long somaMatriz;
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a quantidade de linhas da Matriz");
+		indice = sc.nextInt();
+		System.out.println("Digite a quantidade de colunas da Matriz");
+		indice2 = sc.nextInt();
+
+		long matriz[][] = new long[indice][indice2];
+
+		for (int i = 0; i < indice; i++) {
+			for (int j = 0; j < indice2; j++) {
+				System.out.println("digite um numero");
+				matriz[i][j] = sc.nextInt();
+				somaMatriz = somaMatriz + matriz[i][j];
+
+				
+			}
+		}
+			System.out.println("Os numero sao:");
+			for (int i = 0; i < indice; i++) {
+				for (int j = 0; j < indice2; j++) {
+					System.out.println(matriz[i][j]);
+				}
+		}			System.out.println(somaMatriz);
+					sc.close();
+	}
+
+}
